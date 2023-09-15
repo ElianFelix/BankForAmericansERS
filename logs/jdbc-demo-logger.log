@@ -1,0 +1,11 @@
+2022-11-28 20:27:52,917 DEBUG com.revature.utils.DbConn [main] Stablishing connectionjdbc:postgresql://localhost:9000/BankForAmericansERS
+2022-11-28 20:27:53,091 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@906d29b
+2022-11-28 20:28:25,233 DEBUG com.revature.utils.DbConn [main] Stablishing connectionjdbc:postgresql://localhost:9000/BankForAmericansERS
+2022-11-28 20:28:25,419 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@576f63f6
+2022-11-28 20:30:56,356 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@73a2e526
+2022-11-28 20:31:08,043 DEBUG com.revature.utils.DbConn [main] Stablishing connectionjdbc:postgresql://localhost:9000/BankForAmericansERS
+2022-11-28 20:31:08,225 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@906d29b
+2022-11-28 20:42:17,289 DEBUG com.revature.utils.DbConn [main] Stablishing connectionjdbc:postgresql://localhost:9000/BankForAmericansERS
+2022-11-28 20:42:17,483 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@23aa363a
+2022-11-28 20:47:17,702 DEBUG com.revature.utils.DbConn [main] Stablishing connectionjdbc:postgresql://localhost:9000/BankForAmericansERS
+2022-11-28 20:47:17,891 INFO com.revature.utils.testDbConnection [main] org.postgresql.jdbc.PgDatabaseMetaData@906d29b

@@ -1,0 +1,354 @@
+2022-11-29 01:48:41,080 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 01:48:41,082 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-39] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 01:49:35,383 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/users/1 has started.
+2022-11-29 01:52:01,519 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/users/1 has started.
+2022-11-29 12:26:34,514 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 12:31:26,192 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 12:36:00,619 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 12:37:43,952 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 12:37:43,953 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement";
+2022-11-29 12:59:11,324 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 12:59:11,325 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement";
+2022-11-29 13:21:12,317 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/types/4/users/1 has started.
+2022-11-29 13:21:47,747 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/types/4/users/1 has started.
+2022-11-29 13:22:35,140 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/types/4/users/1 has started.
+2022-11-29 13:22:35,142 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "TypeId" = 4;
+2022-11-29 14:37:43,280 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/1 has started.
+2022-11-29 14:37:50,532 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 14:37:50,548 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 14:37:59,008 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/tickets/1 has started.
+2022-11-29 14:37:59,012 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserId" = '1';
+2022-11-29 14:38:28,928 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/1 has started.
+2022-11-29 14:38:28,931 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserId" = '1';
+2022-11-29 14:39:41,193 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/1 has started.
+2022-11-29 14:39:45,703 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/login has started.
+2022-11-29 14:39:45,719 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 14:39:54,041 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/tickets/1 has started.
+2022-11-29 14:39:54,044 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "Reimbursement" WHERE "ReimbId" = '1';
+2022-11-29 15:04:08,965 INFO com.revature.Server [JettyServerThreadPool-42] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:07:54,052 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:11:56,940 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:11:57,109 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, test ticket numero 2, 1, 1, 3);
+2022-11-29 15:13:23,721 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:13:23,885 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3);
+2022-11-29 15:16:09,775 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:16:09,959 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3);
+2022-11-29 15:22:38,609 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:22:38,785 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3);
+2022-11-29 15:26:49,619 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:26:49,813 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3);
+2022-11-29 15:27:58,620 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:27:58,813 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3) RETURNING "ReimbId";
+2022-11-29 15:28:04,448 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 15:28:04,449 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-25] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 2', 1, 1, 3) RETURNING "ReimbId";
+2022-11-29 15:29:57,614 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/tickets/types/4/users/1 has started.
+2022-11-29 15:29:57,616 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-40] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "TypeId" = 4;
+2022-11-29 15:30:02,181 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/types/3/users/1 has started.
+2022-11-29 15:30:02,181 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-24] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "TypeId" = 3;
+2022-11-29 15:59:58,871 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/status/1/users/1 has started.
+2022-11-29 16:04:13,166 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/status/1/users/1 has started.
+2022-11-29 16:04:13,169 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "StatusId" = 1;
+2022-11-29 16:28:03,493 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/users/1 has started.
+2022-11-29 16:28:08,702 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 16:28:08,702 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-25] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 16:30:35,289 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 16:30:35,290 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 18:23:22,995 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 18:23:22,997 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-39] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 18:23:26,856 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 18:23:26,857 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-24] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement";
+2022-11-29 18:23:36,732 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 18:23:36,733 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 18:23:41,637 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 18:23:41,637 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement";
+2022-11-29 18:23:51,962 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/tickets/2 has started.
+2022-11-29 18:27:49,805 INFO com.revature.Server [JettyServerThreadPool-41] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:27:49,817 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-41] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:30:17,245 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:30:17,248 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:30:52,466 INFO com.revature.Server [JettyServerThreadPool-27] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:30:52,469 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-27] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:31:06,289 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:31:06,291 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:33:21,593 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:33:21,596 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:33:31,566 INFO com.revature.Server [JettyServerThreadPool-28] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:33:31,568 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-28] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:33:34,319 INFO com.revature.Server [JettyServerThreadPool-43] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:33:34,322 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-43] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:33:56,106 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:33:56,109 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:34:32,396 INFO com.revature.Server [JettyServerThreadPool-29] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:34:32,398 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-29] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:35:10,937 INFO com.revature.Server [JettyServerThreadPool-30] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:35:10,939 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-30] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:37:44,926 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:37:44,928 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:39:01,687 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:39:01,688 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:39:14,411 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:39:14,413 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:39:22,606 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:39:22,608 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:40:00,578 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:40:00,580 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:40:27,371 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:40:27,373 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:40:46,189 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:40:46,191 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:41:29,106 INFO com.revature.Server [JettyServerThreadPool-42] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:41:29,109 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-42] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:41:41,921 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:41:41,923 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:44:43,653 INFO com.revature.Server [JettyServerThreadPool-50] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:44:43,655 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-50] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:44:51,827 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:44:51,829 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:45:29,970 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:45:29,972 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:45:36,942 INFO com.revature.Server [JettyServerThreadPool-49] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:45:36,943 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-49] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:46:30,740 INFO com.revature.Server [JettyServerThreadPool-43] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:46:30,741 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-43] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:47:10,408 INFO com.revature.Server [JettyServerThreadPool-28] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:47:10,410 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-28] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:47:23,036 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:47:23,037 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:47:47,783 INFO com.revature.Server [JettyServerThreadPool-28] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:47:47,785 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-28] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:48:41,033 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:48:41,046 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-39] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:50:46,382 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:50:46,384 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:51:07,242 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:51:07,243 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-25] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:51:22,912 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:51:22,914 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:51:41,881 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:51:41,883 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:51:59,409 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:51:59,411 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:52:20,199 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:52:20,201 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:52:37,212 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:52:37,214 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:53:14,143 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:53:14,144 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:55:17,038 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:55:17,040 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 18:55:19,431 INFO com.revature.Server [JettyServerThreadPool-27] Request at URL http://localhost:8081/login has started.
+2022-11-29 18:55:19,434 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-27] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:00:00,021 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:00:00,023 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:00:17,886 INFO com.revature.Server [JettyServerThreadPool-28] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:00:17,889 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-28] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:00:22,389 INFO com.revature.Server [JettyServerThreadPool-43] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:00:22,392 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-43] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:00:52,668 INFO com.revature.Server [JettyServerThreadPool-29] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:00:52,669 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-29] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:00:55,918 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:00:55,920 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:01:36,247 INFO com.revature.Server [JettyServerThreadPool-30] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:01:36,249 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-30] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:02:43,846 INFO com.revature.Server [JettyServerThreadPool-23] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:02:43,847 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-23] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:02:51,634 INFO com.revature.Server [JettyServerThreadPool-29] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:02:51,635 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-29] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:03:26,677 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:03:26,679 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:03:41,942 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:03:41,944 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:03:59,123 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:03:59,125 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:04:13,936 INFO com.revature.Server [JettyServerThreadPool-46] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:04:13,937 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-46] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:05:08,691 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:05:08,693 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-26] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:06:02,284 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:06:02,286 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:06:39,115 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 19:06:39,116 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-24] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 19:06:51,517 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:06:51,520 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:07:11,670 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:07:11,672 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:07:18,149 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 19:07:18,149 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 19:07:25,788 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/2 has started.
+2022-11-29 19:07:28,892 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/login has started.
+2022-11-29 19:07:28,895 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:07:36,852 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/2 has started.
+2022-11-29 19:07:36,856 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "Reimbursement" WHERE "ReimbId" = '2';
+2022-11-29 19:09:23,766 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 19:09:23,766 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-37] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 19:09:27,403 INFO com.revature.Server [JettyServerThreadPool-43] Request at URL http://localhost:8081/users/1 has started.
+2022-11-29 19:09:40,334 INFO com.revature.Server [JettyServerThreadPool-49] Request at URL http://localhost:8081/users/ has started.
+2022-11-29 19:09:40,334 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-49] Our query to retrieve all users: 
+SELECT * FROM "User";
+2022-11-29 19:09:42,201 INFO com.revature.Server [JettyServerThreadPool-43] Request at URL http://localhost:8081/users/1 has started.
+2022-11-29 19:09:42,203 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-43] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserId" = '1';
+2022-11-29 19:09:50,134 INFO com.revature.Server [JettyServerThreadPool-49] Request at URL http://localhost:8081/users/username/mock has started.
+2022-11-29 19:09:50,135 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-49] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 19:20:11,849 INFO com.revature.Server [JettyServerThreadPool-52] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 19:20:11,849 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-52] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement";
+2022-11-29 19:20:15,412 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/tickets/2 has started.
+2022-11-29 19:20:15,414 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-44] Our query to retrieve user: 
+SELECT * FROM "Reimbursement" WHERE "ReimbId" = '2';
+2022-11-29 19:20:24,312 INFO com.revature.Server [JettyServerThreadPool-51] Request at URL http://localhost:8081/tickets/types/3/users/1 has started.
+2022-11-29 19:20:24,313 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-51] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "TypeId" = 3;
+2022-11-29 19:20:27,751 INFO com.revature.Server [JettyServerThreadPool-44] Request at URL http://localhost:8081/tickets/status/1/users/1 has started.
+2022-11-29 19:20:27,751 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-44] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1 AND "StatusId" = 1;
+2022-11-29 21:27:32,022 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/users/1 has started.
+2022-11-29 21:27:32,024 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-39] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1
+2022-11-29 21:36:36,220 INFO com.revature.Server [JettyServerThreadPool-42] Request at URL http://localhost:8081/tickets/users/1 has started.
+2022-11-29 21:36:36,221 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-42] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 1
+2022-11-29 21:36:40,872 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/users/2 has started.
+2022-11-29 21:36:40,872 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-25] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 2
+2022-11-29 21:36:46,024 INFO com.revature.Server [JettyServerThreadPool-41] Request at URL http://localhost:8081/tickets/users/3 has started.
+2022-11-29 21:36:46,025 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-41] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 3
+2022-11-29 21:36:50,120 INFO com.revature.Server [JettyServerThreadPool-42] Request at URL http://localhost:8081/tickets/users/5 has started.
+2022-11-29 21:36:50,121 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-42] Our query to retrieve all tickets: 
+SELECT * FROM "Reimbursement" WHERE "OwnerId" = 5
+2022-11-29 22:58:38,985 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/login has started.
+2022-11-29 22:58:39,000 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-39] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 22:58:42,861 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 22:58:42,911 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-25] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 3', 1, 1, 3) RETURNING "ReimbId";
+2022-11-29 22:59:19,926 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/ has started.
+2022-11-29 22:59:19,927 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-24] Our query to create ticket: 
+INSERT INTO public."Reimbursement" ("ReimbId", "Amount", "Desc", "OwnerId",
+"StatusId", "TypeId")
+ VALUES (DEFAULT, 100.000000, 'test ticket numero 3', 1, 1, 3) RETURNING "ReimbId";
+2022-11-29 22:59:48,138 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 22:59:48,156 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-37] Our query to retrieve user: 
+SELECT * FROM "Reimbursement" WHERE "ReimbId" = '3';
+2022-11-29 22:59:56,274 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:04:28,542 INFO com.revature.Server [JettyServerThreadPool-39] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:04:31,824 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/login has started.
+2022-11-29 23:04:31,835 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-25] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 23:04:35,739 INFO com.revature.Server [JettyServerThreadPool-37] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:05:09,101 INFO com.revature.Server [JettyServerThreadPool-24] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:05:09,104 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-24] Our query to retrieve user: 
+SELECT * FROM "Reimbursement" WHERE "ReimbId" = '3';
+2022-11-29 23:05:40,371 INFO com.revature.Server [JettyServerThreadPool-26] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:05:52,465 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 23:05:52,467 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock';
+2022-11-29 23:05:56,817 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:06:21,020 INFO com.revature.Server [JettyServerThreadPool-40] Request at URL http://localhost:8081/login has started.
+2022-11-29 23:06:21,023 INFO com.revature.dao.UserDaoImpl [JettyServerThreadPool-40] Our query to retrieve user: 
+SELECT * FROM "User" WHERE "UserName" = 'mock2';
+2022-11-29 23:06:24,250 INFO com.revature.Server [JettyServerThreadPool-25] Request at URL http://localhost:8081/tickets/3 has started.
+2022-11-29 23:06:24,252 INFO com.revature.dao.ReimbTicketDaoImpl [JettyServerThreadPool-25] Our query to delete user: 
+DELETE FROM "Reimbursement" WHERE "ReimbId" = 3 RETURNING "ReimbId";
